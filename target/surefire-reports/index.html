@@ -1,0 +1,483 @@
+<!DOCTYPE html>
+
+<html>
+  <head>
+  <meta charset='utf-8'>
+  <title>TestNG reports</title>
+
+    <link type="text/css" href="testng-reports.css" rel="stylesheet" />
+    <script type="text/javascript" src="jquery-1.7.1.min.js"></script>
+    <script type="text/javascript" src="testng-reports.js"></script>
+    <script type="text/javascript" src="https://www.google.com/jsapi"></script>
+    <script type='text/javascript'>
+      google.load('visualization', '1', {packages:['table']});
+      google.setOnLoadCallback(drawTable);
+      var suiteTableInitFunctions = new Array();
+      var suiteTableData = new Array();
+    </script>
+    <!--
+      <script type="text/javascript" src="jquery-ui/js/jquery-ui-1.8.16.custom.min.js"></script>
+     -->
+  </head>
+
+  <body>
+    <div class="top-banner-root">
+      <span class="top-banner-title-font">Test results</span>
+      <br/>
+      <span class="top-banner-font-1">1 suite</span>
+    </div> <!-- top-banner-root -->
+    <div class="navigator-root">
+      <div class="navigator-suite-header">
+        <span>All suites</span>
+        <a href="#" class="collapse-all-link" title="Collapse/expand all the suites">
+          <img class="collapse-all-icon" src="collapseall.gif">
+          </img> <!-- collapse-all-icon -->
+        </a> <!-- collapse-all-link -->
+      </div> <!-- navigator-suite-header -->
+      <div class="suite">
+        <div class="rounded-window">
+          <div class="suite-header light-rounded-window-top">
+            <a href="#" class="navigator-link" panel-name="suite-FirstProject.Myngconnect.LoginTest">
+              <span class="suite-name border-skipped">FirstProject.Myngconnect.LoginTest</span>
+            </a> <!-- navigator-link -->
+          </div> <!-- suite-header light-rounded-window-top -->
+          <div class="navigator-suite-content">
+            <div class="suite-section-title">
+              <span>Info</span>
+            </div> <!-- suite-section-title -->
+            <div class="suite-section-content">
+              <ul>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="test-xml-FirstProject.Myngconnect.LoginTest">
+                    <span>[unset file name]</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="testlist-FirstProject.Myngconnect.LoginTest">
+                    <span class="test-stats">1 test</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="group-FirstProject.Myngconnect.LoginTest">
+                    <span>0 groups</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="times-FirstProject.Myngconnect.LoginTest">
+                    <span>Times</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="reporter-FirstProject.Myngconnect.LoginTest">
+                    <span>Reporter output</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="ignored-methods-FirstProject.Myngconnect.LoginTest">
+                    <span>Ignored methods</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="chronological-FirstProject.Myngconnect.LoginTest">
+                    <span>Chronological view</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+              </ul>
+            </div> <!-- suite-section-content -->
+            <div class="result-section">
+              <div class="suite-section-title">
+                <span>Results</span>
+              </div> <!-- suite-section-title -->
+              <div class="suite-section-content">
+                <ul>
+                  <li>
+                    <span class="method-stats">2 methods,  2 skipped,  </span>
+                  </li>
+                  <li>
+                    <span class="method-list-title skipped">Skipped methods</span>
+                    <span class="show-or-hide-methods skipped">
+                      <a href="#" panel-name="suite-FirstProject.Myngconnect.LoginTest" class="hide-methods skipped suite-FirstProject.Myngconnect.LoginTest"> (hide)</a> <!-- hide-methods skipped suite-FirstProject.Myngconnect.LoginTest -->
+                      <a href="#" panel-name="suite-FirstProject.Myngconnect.LoginTest" class="show-methods skipped suite-FirstProject.Myngconnect.LoginTest"> (show)</a> <!-- show-methods skipped suite-FirstProject.Myngconnect.LoginTest -->
+                    </span>
+                    <div class="method-list-content skipped suite-FirstProject.Myngconnect.LoginTest">
+                      <span>
+                        <img width="3%" src="skipped.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-FirstProject.Myngconnect.LoginTest" title="FirstProject.Myngconnect.LoginTest" hash-for-method="loginTest">loginTest</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="skipped.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-FirstProject.Myngconnect.LoginTest" title="FirstProject.Myngconnect.LoginTest" hash-for-method="logoutTest">logoutTest</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                    </div> <!-- method-list-content skipped suite-FirstProject.Myngconnect.LoginTest -->
+                  </li>
+                </ul>
+              </div> <!-- suite-section-content -->
+            </div> <!-- result-section -->
+          </div> <!-- navigator-suite-content -->
+        </div> <!-- rounded-window -->
+      </div> <!-- suite -->
+    </div> <!-- navigator-root -->
+    <div class="wrapper">
+      <div class="main-panel-root">
+        <div panel-name="suite-FirstProject.Myngconnect.LoginTest" class="panel FirstProject.Myngconnect.LoginTest">
+          <div class="suite-FirstProject.Myngconnect.LoginTest-class-skipped">
+            <div class="main-panel-header rounded-window-top">
+              <img src="skipped.png"/>
+              <span class="class-name">FirstProject.Myngconnect.LoginTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="loginTest">
+                  </a> <!-- loginTest -->
+                  <span class="method-name">loginTest</span>
+                  <div class="stack-trace">org.openqa.selenium.WebDriverException: Failed to connect to binary FirefoxBinary(/usr/bin/firefox) on port 7055; process output follows: 
+.2&quot;,&quot;st&quot;:1442597402000}}}
+1499686795602	addons.xpi	DEBUG	No changes found
+1499686795607	addons.xpi	DEBUG	Registering manifest for /opt/firefox47/browser/features/firefox@getpocket.com.xpi
+1499686795608	addons.xpi	DEBUG	Loading bootstrap scope from /opt/firefox47/browser/features/firefox@getpocket.com.xpi
+1499686795616	addons.xpi	DEBUG	Calling bootstrap method startup on firefox@getpocket.com version 1.0.2
+1499686795621	addons.xpi-utils	DEBUG	Starting async load of XPI database /tmp/anonymous3919939016482827539webdriver-profile/extensions.json
+1499686795622	addons.xpi	DEBUG	Registering manifest for /opt/firefox47/browser/features/e10srollout@mozilla.org.xpi
+1499686795622	addons.xpi	DEBUG	Loading bootstrap scope from /opt/firefox47/browser/features/e10srollout@mozilla.org.xpi
+1499686795624	addons.xpi	DEBUG	Calling bootstrap method startup on e10srollout@mozilla.org version 1.0
+1499686795625	addons.xpi	DEBUG	Registering manifest for /opt/firefox47/browser/features/loop@mozilla.org.xpi
+1499686795625	addons.xpi	DEBUG	Loading bootstrap scope from /opt/firefox47/browser/features/loop@mozilla.org.xpi
+1499686795630	addons.xpi	DEBUG	Calling bootstrap method startup on loop@mozilla.org version 1.3.2
+1499686795644	addons.manager	DEBUG	Registering shutdown blocker for XPIProvider
+1499686795644	addons.manager	DEBUG	Provider finished startup: XPIProvider
+1499686795644	addons.manager	DEBUG	Starting provider: LightweightThemeManager
+1499686795644	addons.manager	DEBUG	Registering shutdown blocker for LightweightThemeManager
+1499686795644	addons.manager	DEBUG	Provider finished startup: LightweightThemeManager
+1499686795645	addons.manager	DEBUG	Starting provider: GMPProvider
+1499686795648	addons.manager	DEBUG	Registering shutdown blocker for GMPProvider
+1499686795648	addons.manager	DEBUG	Provider finished startup: GMPProvider
+1499686795648	addons.manager	DEBUG	Starting provider: PluginProvider
+1499686795648	addons.manager	DEBUG	Registering shutdown blocker for PluginProvider
+1499686795649	addons.manager	DEBUG	Provider finished startup: PluginProvider
+1499686795649	addons.manager	DEBUG	Completed startup sequence
+1499686795779	addons.xpi-utils	DEBUG	Async JSON file read took 0 MS
+1499686795779	addons.xpi-utils	DEBUG	Finished async read of XPI database, parsing...
+1499686795781	addons.xpi-utils	DEBUG	Successfully read XPI database
+1499686795788	addons.manager	DEBUG	Starting provider: &lt;unnamed-provider&gt;
+1499686795788	addons.manager	DEBUG	Registering shutdown blocker for &lt;unnamed-provider&gt;
+1499686795788	addons.manager	DEBUG	Provider finished startup: &lt;unnamed-provider&gt;
+*** Blocklist::_loadBlocklistFromFile: blocklist is disabled
+1499686795855	addons.manager	DEBUG	Starting provider: PreviousExperimentProvider
+1499686795855	addons.manager	DEBUG	Registering shutdown blocker for PreviousExperimentProvider
+1499686795855	addons.manager	DEBUG	Provider finished startup: PreviousExperimentProvider
+1499686799328	addons.xpi	DEBUG	Calling bootstrap method shutdown on firefox@getpocket.com version 1.0.2
+1499686799328	addons.xpi	DEBUG	Calling bootstrap method shutdown on e10srollout@mozilla.org version 1.0
+1499686799329	addons.xpi	DEBUG	Calling bootstrap method shutdown on loop@mozilla.org version 1.3.2
+JavaScript error: https://www.googletagmanager.com/gtm.js?id=GTM-MW3R8V&amp;l=dataLayer, line 52: NS_ERROR_NOT_INITIALIZED: 
+1499686799572	addons.manager	DEBUG	shutdown
+1499686799572	addons.manager	DEBUG	Calling shutdown blocker for XPIProvider
+1499686799572	addons.xpi	DEBUG	shutdown
+1499686799572	addons.xpi-utils	DEBUG	shutdown
+1499686799573	addons.manager	DEBUG	Calling shutdown blocker for LightweightThemeManager
+1499686799573	addons.manager	DEBUG	Calling shutdown blocker for GMPProvider
+1499686799574	addons.manager	DEBUG	Calling shutdown blocker for PluginProvider
+1499686799575	addons.manager	DEBUG	Calling shutdown blocker for &lt;unnamed-provider&gt;
+1499686799576	addons.manager	DEBUG	Calling shutdown blocker for PreviousExperimentProvider
+1499686799577	addons.xpi	DEBUG	Notifying XPI shutdown observers
+1499686799580	addons.manager	DEBUG	Async provider shutdown done
+
+Build info: version: &apos;2.43.1&apos;, revision: &apos;5163bceef1bc36d43f3dc0b83c88998168a363a0&apos;, time: &apos;2014-09-10 09:43:55&apos;
+System info: host: &apos;asda1713po02529&apos;, ip: &apos;127.0.1.1&apos;, os.name: &apos;Linux&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;4.4.0-83-generic&apos;, java.version: &apos;1.8.0_131&apos;
+Driver info: driver.version: FirefoxDriver
+	at org.openqa.selenium.firefox.internal.NewProfileExtensionConnection.start(NewProfileExtensionConnection.java:130)
+	at org.openqa.selenium.firefox.FirefoxDriver.startClient(FirefoxDriver.java:246)
+	at org.openqa.selenium.remote.RemoteWebDriver.&lt;init&gt;(RemoteWebDriver.java:114)
+	at org.openqa.selenium.firefox.FirefoxDriver.&lt;init&gt;(FirefoxDriver.java:191)
+	at org.openqa.selenium.firefox.FirefoxDriver.&lt;init&gt;(FirefoxDriver.java:186)
+	at org.openqa.selenium.firefox.FirefoxDriver.&lt;init&gt;(FirefoxDriver.java:182)
+	at org.openqa.selenium.firefox.FirefoxDriver.&lt;init&gt;(FirefoxDriver.java:95)
+	at FirstProject.Myngconnect.LoginTest.beforetest(LoginTest.java:49)
+Caused by: org.openqa.selenium.firefox.NotConnectedException: Unable to connect to host 127.0.0.1 on port 7055 after 45000 ms. Firefox console output:
+.2&quot;,&quot;st&quot;:1442597402000}}}
+1499686795602	addons.xpi	DEBUG	No changes found
+1499686795607	addons.xpi	DEBUG	Registering manifest for /opt/firefox47/browser/features/firefox@getpocket.com.xpi
+1499686795608	addons.xpi	DEBUG	Loading bootstrap scope from /opt/firefox47/browser/features/firefox@getpocket.com.xpi
+1499686795616	addons.xpi	DEBUG	Calling bootstrap method startup on firefox@getpocket.com version 1.0.2
+1499686795621	addons.xpi-utils	DEBUG	Starting async load of XPI database /tmp/anonymous3919939016482827539webdriver-profile/extensions.json
+1499686795622	addons.xpi	DEBUG	Registering manifest for /opt/firefox47/browser/features/e10srollout@mozilla.org.xpi
+1499686795622	addons.xpi	DEBUG	Loading bootstrap scope from /opt/firefox47/browser/features/e10srollout@mozilla.org.xpi
+1499686795624	addons.xpi	DEBUG	Calling bootstrap method startup on e10srollout@mozilla.org version 1.0
+1499686795625	addons.xpi	DEBUG	Registering manifest for /opt/firefox47/browser/features/loop@mozilla.org.xpi
+1499686795625	addons.xpi	DEBUG	Loading bootstrap scope from /opt/firefox47/browser/features/loop@mozilla.org.xpi
+1499686795630	addons.xpi	DEBUG	Calling bootstrap method startup on loop@mozilla.org version 1.3.2
+1499686795644	addons.manager	DEBUG	Registering shutdown blocker for XPIProvider
+1499686795644	addons.manager	DEBUG	Provider finished startup: XPIProvider
+1499686795644	addons.manager	DEBUG	Starting provider: LightweightThemeManager
+1499686795644	addons.manager	DEBUG	Registering shutdown blocker for LightweightThemeManager
+1499686795644	addons.manager	DEBUG	Provider finished startup: LightweightThemeManager
+1499686795645	addons.manager	DEBUG	Starting provider: GMPProvider
+1499686795648	addons.manager	DEBUG	Registering shutdown blocker for GMPProvider
+1499686795648	addons.manager	DEBUG	Provider finished startup: GMPProvider
+1499686795648	addons.manager	DEBUG	Starting provider: PluginProvider
+1499686795648	addons.manager	DEBUG	Registering shutdown blocker for PluginProvider
+1499686795649	addons.manager	DEBUG	Provider finished startup: PluginProvider
+1499686795649	addons.manager	DEBUG	Completed startup sequence
+1499686795779	addons.xpi-utils	DEBUG	Async JSON file read took 0 MS
+1499686795779	addons.xpi-utils	DEBUG	Finished async read of XPI database, parsing...
+1499686795781	addons.xpi-utils	DEBUG	Successfully read XPI database
+1499686795788	addons.manager	DEBUG	Starting provider: &lt;unnamed-provider&gt;
+1499686795788	addons.manager	DEBUG	Registering shutdown blocker for &lt;unnamed-provider&gt;
+1499686795788	addons.manager	DEBUG	Provider finished startup: &lt;unnamed-provider&gt;
+*** Blocklist::_loadBlocklistFromFile: blocklist is disabled
+1499686795855	addons.manager	DEBUG	Starting provider: PreviousExperimentProvider
+1499686795855	addons.manager	DEBUG	Registering shutdown blocker for PreviousExperimentProvider
+1499686795855	addons.manager	DEBUG	Provider finished startup: PreviousExperimentProvider
+1499686799328	addons.xpi	DEBUG	Calling bootstrap method shutdown on firefox@getpocket.com version 1.0.2
+1499686799328	addons.xpi	DEBUG	Calling bootstrap method shutdown on e10srollout@mozilla.org version 1.0
+1499686799329	addons.xpi	DEBUG	Calling bootstrap method shutdown on loop@mozilla.org version 1.3.2
+JavaScript error: https://www.googletagmanager.com/gtm.js?id=GTM-MW3R8V&amp;l=dataLayer, line 52: NS_ERROR_NOT_INITIALIZED: 
+1499686799572	addons.manager	DEBUG	shutdown
+1499686799572	addons.manager	DEBUG	Calling shutdown blocker for XPIProvider
+1499686799572	addons.xpi	DEBUG	shutdown
+1499686799572	addons.xpi-utils	DEBUG	shutdown
+1499686799573	addons.manager	DEBUG	Calling shutdown blocker for LightweightThemeManager
+1499686799573	addons.manager	DEBUG	Calling shutdown blocker for GMPProvider
+1499686799574	addons.manager	DEBUG	Calling shutdown blocker for PluginProvider
+1499686799575	addons.manager	DEBUG	Calling shutdown blocker for &lt;unnamed-provider&gt;
+1499686799576	addons.manager	DEBUG	Calling shutdown blocker for PreviousExperimentProvider
+1499686799577	addons.xpi	DEBUG	Notifying XPI shutdown observers
+1499686799580	addons.manager	DEBUG	Async provider shutdown done
+
+	at org.openqa.selenium.firefox.internal.NewProfileExtensionConnection.start(NewProfileExtensionConnection.java:118)
+	... 39 more
+... Removed 32 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="logoutTest">
+                  </a> <!-- logoutTest -->
+                  <span class="method-name">logoutTest</span>
+                  <div class="stack-trace">org.openqa.selenium.WebDriverException: Failed to connect to binary FirefoxBinary(/usr/bin/firefox) on port 7055; process output follows: 
+.2&quot;,&quot;st&quot;:1442597402000}}}
+1499686795602	addons.xpi	DEBUG	No changes found
+1499686795607	addons.xpi	DEBUG	Registering manifest for /opt/firefox47/browser/features/firefox@getpocket.com.xpi
+1499686795608	addons.xpi	DEBUG	Loading bootstrap scope from /opt/firefox47/browser/features/firefox@getpocket.com.xpi
+1499686795616	addons.xpi	DEBUG	Calling bootstrap method startup on firefox@getpocket.com version 1.0.2
+1499686795621	addons.xpi-utils	DEBUG	Starting async load of XPI database /tmp/anonymous3919939016482827539webdriver-profile/extensions.json
+1499686795622	addons.xpi	DEBUG	Registering manifest for /opt/firefox47/browser/features/e10srollout@mozilla.org.xpi
+1499686795622	addons.xpi	DEBUG	Loading bootstrap scope from /opt/firefox47/browser/features/e10srollout@mozilla.org.xpi
+1499686795624	addons.xpi	DEBUG	Calling bootstrap method startup on e10srollout@mozilla.org version 1.0
+1499686795625	addons.xpi	DEBUG	Registering manifest for /opt/firefox47/browser/features/loop@mozilla.org.xpi
+1499686795625	addons.xpi	DEBUG	Loading bootstrap scope from /opt/firefox47/browser/features/loop@mozilla.org.xpi
+1499686795630	addons.xpi	DEBUG	Calling bootstrap method startup on loop@mozilla.org version 1.3.2
+1499686795644	addons.manager	DEBUG	Registering shutdown blocker for XPIProvider
+1499686795644	addons.manager	DEBUG	Provider finished startup: XPIProvider
+1499686795644	addons.manager	DEBUG	Starting provider: LightweightThemeManager
+1499686795644	addons.manager	DEBUG	Registering shutdown blocker for LightweightThemeManager
+1499686795644	addons.manager	DEBUG	Provider finished startup: LightweightThemeManager
+1499686795645	addons.manager	DEBUG	Starting provider: GMPProvider
+1499686795648	addons.manager	DEBUG	Registering shutdown blocker for GMPProvider
+1499686795648	addons.manager	DEBUG	Provider finished startup: GMPProvider
+1499686795648	addons.manager	DEBUG	Starting provider: PluginProvider
+1499686795648	addons.manager	DEBUG	Registering shutdown blocker for PluginProvider
+1499686795649	addons.manager	DEBUG	Provider finished startup: PluginProvider
+1499686795649	addons.manager	DEBUG	Completed startup sequence
+1499686795779	addons.xpi-utils	DEBUG	Async JSON file read took 0 MS
+1499686795779	addons.xpi-utils	DEBUG	Finished async read of XPI database, parsing...
+1499686795781	addons.xpi-utils	DEBUG	Successfully read XPI database
+1499686795788	addons.manager	DEBUG	Starting provider: &lt;unnamed-provider&gt;
+1499686795788	addons.manager	DEBUG	Registering shutdown blocker for &lt;unnamed-provider&gt;
+1499686795788	addons.manager	DEBUG	Provider finished startup: &lt;unnamed-provider&gt;
+*** Blocklist::_loadBlocklistFromFile: blocklist is disabled
+1499686795855	addons.manager	DEBUG	Starting provider: PreviousExperimentProvider
+1499686795855	addons.manager	DEBUG	Registering shutdown blocker for PreviousExperimentProvider
+1499686795855	addons.manager	DEBUG	Provider finished startup: PreviousExperimentProvider
+1499686799328	addons.xpi	DEBUG	Calling bootstrap method shutdown on firefox@getpocket.com version 1.0.2
+1499686799328	addons.xpi	DEBUG	Calling bootstrap method shutdown on e10srollout@mozilla.org version 1.0
+1499686799329	addons.xpi	DEBUG	Calling bootstrap method shutdown on loop@mozilla.org version 1.3.2
+JavaScript error: https://www.googletagmanager.com/gtm.js?id=GTM-MW3R8V&amp;l=dataLayer, line 52: NS_ERROR_NOT_INITIALIZED: 
+1499686799572	addons.manager	DEBUG	shutdown
+1499686799572	addons.manager	DEBUG	Calling shutdown blocker for XPIProvider
+1499686799572	addons.xpi	DEBUG	shutdown
+1499686799572	addons.xpi-utils	DEBUG	shutdown
+1499686799573	addons.manager	DEBUG	Calling shutdown blocker for LightweightThemeManager
+1499686799573	addons.manager	DEBUG	Calling shutdown blocker for GMPProvider
+1499686799574	addons.manager	DEBUG	Calling shutdown blocker for PluginProvider
+1499686799575	addons.manager	DEBUG	Calling shutdown blocker for &lt;unnamed-provider&gt;
+1499686799576	addons.manager	DEBUG	Calling shutdown blocker for PreviousExperimentProvider
+1499686799577	addons.xpi	DEBUG	Notifying XPI shutdown observers
+1499686799580	addons.manager	DEBUG	Async provider shutdown done
+
+Build info: version: &apos;2.43.1&apos;, revision: &apos;5163bceef1bc36d43f3dc0b83c88998168a363a0&apos;, time: &apos;2014-09-10 09:43:55&apos;
+System info: host: &apos;asda1713po02529&apos;, ip: &apos;127.0.1.1&apos;, os.name: &apos;Linux&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;4.4.0-83-generic&apos;, java.version: &apos;1.8.0_131&apos;
+Driver info: driver.version: FirefoxDriver
+	at org.openqa.selenium.firefox.internal.NewProfileExtensionConnection.start(NewProfileExtensionConnection.java:130)
+	at org.openqa.selenium.firefox.FirefoxDriver.startClient(FirefoxDriver.java:246)
+	at org.openqa.selenium.remote.RemoteWebDriver.&lt;init&gt;(RemoteWebDriver.java:114)
+	at org.openqa.selenium.firefox.FirefoxDriver.&lt;init&gt;(FirefoxDriver.java:191)
+	at org.openqa.selenium.firefox.FirefoxDriver.&lt;init&gt;(FirefoxDriver.java:186)
+	at org.openqa.selenium.firefox.FirefoxDriver.&lt;init&gt;(FirefoxDriver.java:182)
+	at org.openqa.selenium.firefox.FirefoxDriver.&lt;init&gt;(FirefoxDriver.java:95)
+	at FirstProject.Myngconnect.LoginTest.beforetest(LoginTest.java:49)
+Caused by: org.openqa.selenium.firefox.NotConnectedException: Unable to connect to host 127.0.0.1 on port 7055 after 45000 ms. Firefox console output:
+.2&quot;,&quot;st&quot;:1442597402000}}}
+1499686795602	addons.xpi	DEBUG	No changes found
+1499686795607	addons.xpi	DEBUG	Registering manifest for /opt/firefox47/browser/features/firefox@getpocket.com.xpi
+1499686795608	addons.xpi	DEBUG	Loading bootstrap scope from /opt/firefox47/browser/features/firefox@getpocket.com.xpi
+1499686795616	addons.xpi	DEBUG	Calling bootstrap method startup on firefox@getpocket.com version 1.0.2
+1499686795621	addons.xpi-utils	DEBUG	Starting async load of XPI database /tmp/anonymous3919939016482827539webdriver-profile/extensions.json
+1499686795622	addons.xpi	DEBUG	Registering manifest for /opt/firefox47/browser/features/e10srollout@mozilla.org.xpi
+1499686795622	addons.xpi	DEBUG	Loading bootstrap scope from /opt/firefox47/browser/features/e10srollout@mozilla.org.xpi
+1499686795624	addons.xpi	DEBUG	Calling bootstrap method startup on e10srollout@mozilla.org version 1.0
+1499686795625	addons.xpi	DEBUG	Registering manifest for /opt/firefox47/browser/features/loop@mozilla.org.xpi
+1499686795625	addons.xpi	DEBUG	Loading bootstrap scope from /opt/firefox47/browser/features/loop@mozilla.org.xpi
+1499686795630	addons.xpi	DEBUG	Calling bootstrap method startup on loop@mozilla.org version 1.3.2
+1499686795644	addons.manager	DEBUG	Registering shutdown blocker for XPIProvider
+1499686795644	addons.manager	DEBUG	Provider finished startup: XPIProvider
+1499686795644	addons.manager	DEBUG	Starting provider: LightweightThemeManager
+1499686795644	addons.manager	DEBUG	Registering shutdown blocker for LightweightThemeManager
+1499686795644	addons.manager	DEBUG	Provider finished startup: LightweightThemeManager
+1499686795645	addons.manager	DEBUG	Starting provider: GMPProvider
+1499686795648	addons.manager	DEBUG	Registering shutdown blocker for GMPProvider
+1499686795648	addons.manager	DEBUG	Provider finished startup: GMPProvider
+1499686795648	addons.manager	DEBUG	Starting provider: PluginProvider
+1499686795648	addons.manager	DEBUG	Registering shutdown blocker for PluginProvider
+1499686795649	addons.manager	DEBUG	Provider finished startup: PluginProvider
+1499686795649	addons.manager	DEBUG	Completed startup sequence
+1499686795779	addons.xpi-utils	DEBUG	Async JSON file read took 0 MS
+1499686795779	addons.xpi-utils	DEBUG	Finished async read of XPI database, parsing...
+1499686795781	addons.xpi-utils	DEBUG	Successfully read XPI database
+1499686795788	addons.manager	DEBUG	Starting provider: &lt;unnamed-provider&gt;
+1499686795788	addons.manager	DEBUG	Registering shutdown blocker for &lt;unnamed-provider&gt;
+1499686795788	addons.manager	DEBUG	Provider finished startup: &lt;unnamed-provider&gt;
+*** Blocklist::_loadBlocklistFromFile: blocklist is disabled
+1499686795855	addons.manager	DEBUG	Starting provider: PreviousExperimentProvider
+1499686795855	addons.manager	DEBUG	Registering shutdown blocker for PreviousExperimentProvider
+1499686795855	addons.manager	DEBUG	Provider finished startup: PreviousExperimentProvider
+1499686799328	addons.xpi	DEBUG	Calling bootstrap method shutdown on firefox@getpocket.com version 1.0.2
+1499686799328	addons.xpi	DEBUG	Calling bootstrap method shutdown on e10srollout@mozilla.org version 1.0
+1499686799329	addons.xpi	DEBUG	Calling bootstrap method shutdown on loop@mozilla.org version 1.3.2
+JavaScript error: https://www.googletagmanager.com/gtm.js?id=GTM-MW3R8V&amp;l=dataLayer, line 52: NS_ERROR_NOT_INITIALIZED: 
+1499686799572	addons.manager	DEBUG	shutdown
+1499686799572	addons.manager	DEBUG	Calling shutdown blocker for XPIProvider
+1499686799572	addons.xpi	DEBUG	shutdown
+1499686799572	addons.xpi-utils	DEBUG	shutdown
+1499686799573	addons.manager	DEBUG	Calling shutdown blocker for LightweightThemeManager
+1499686799573	addons.manager	DEBUG	Calling shutdown blocker for GMPProvider
+1499686799574	addons.manager	DEBUG	Calling shutdown blocker for PluginProvider
+1499686799575	addons.manager	DEBUG	Calling shutdown blocker for &lt;unnamed-provider&gt;
+1499686799576	addons.manager	DEBUG	Calling shutdown blocker for PreviousExperimentProvider
+1499686799577	addons.xpi	DEBUG	Notifying XPI shutdown observers
+1499686799580	addons.manager	DEBUG	Async provider shutdown done
+
+	at org.openqa.selenium.firefox.internal.NewProfileExtensionConnection.start(NewProfileExtensionConnection.java:118)
+	... 39 more
+... Removed 32 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-FirstProject.Myngconnect.LoginTest-class-skipped -->
+        </div> <!-- panel FirstProject.Myngconnect.LoginTest -->
+        <div panel-name="test-xml-FirstProject.Myngconnect.LoginTest" class="panel">
+          <div class="main-panel-header rounded-window-top">
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <pre>
+&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;
+&lt;!DOCTYPE suite SYSTEM &quot;http://testng.org/testng-1.0.dtd&quot;&gt;
+&lt;suite verbose=&quot;0&quot; name=&quot;FirstProject.Myngconnect.LoginTest&quot;&gt;
+  &lt;test name=&quot;Command line test&quot;&gt;
+    &lt;classes&gt;
+      &lt;class name=&quot;FirstProject.Myngconnect.LoginTest&quot;/&gt;
+    &lt;/classes&gt;
+  &lt;/test&gt; &lt;!-- Command line test --&gt;
+&lt;/suite&gt; &lt;!-- FirstProject.Myngconnect.LoginTest --&gt;
+            </pre>
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="testlist-FirstProject.Myngconnect.LoginTest" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Tests for FirstProject.Myngconnect.LoginTest</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <ul>
+              <li>
+                <span class="test-name">Command line test (1 class)</span>
+              </li>
+            </ul>
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="group-FirstProject.Myngconnect.LoginTest" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Groups for FirstProject.Myngconnect.LoginTest</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="times-FirstProject.Myngconnect.LoginTest" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Times for FirstProject.Myngconnect.LoginTest</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <div class="times-div">
+              <script type="text/javascript">
+suiteTableInitFunctions.push('tableData_FirstProject.Myngconnect.LoginTest');
+function tableData_FirstProject.Myngconnect.LoginTest() {
+var data = new google.visualization.DataTable();
+data.addColumn('number', 'Number');
+data.addColumn('string', 'Method');
+data.addColumn('string', 'Class');
+data.addColumn('number', 'Time (ms)');
+data.addRows(2);
+data.setCell(0, 0, 0)
+data.setCell(0, 1, 'logoutTest')
+data.setCell(0, 2, 'FirstProject.Myngconnect.LoginTest')
+data.setCell(0, 3, 0);
+data.setCell(1, 0, 1)
+data.setCell(1, 1, 'loginTest')
+data.setCell(1, 2, 'FirstProject.Myngconnect.LoginTest')
+data.setCell(1, 3, 0);
+window.suiteTableData['FirstProject.Myngconnect.LoginTest']= { tableData: data, tableDiv: 'times-div-FirstProject.Myngconnect.LoginTest'}
+return data;
+}
+              </script>
+              <span class="suite-total-time">Total running time: 0 ms</span>
+              <div id="times-div-FirstProject.Myngconnect.LoginTest">
+              </div> <!-- times-div-FirstProject.Myngconnect.LoginTest -->
+            </div> <!-- times-div -->
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="reporter-FirstProject.Myngconnect.LoginTest" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Reporter output for FirstProject.Myngconnect.LoginTest</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="ignored-methods-FirstProject.Myngconnect.LoginTest" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">0 ignored methods</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="chronological-FirstProject.Myngconnect.LoginTest" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Methods in chronological order</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <div class="chronological-class">
+              <div class="chronological-class-name">FirstProject.Myngconnect.LoginTest</div> <!-- chronological-class-name -->
+              <div class="configuration-test before">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">beforetest</span>
+                <span class="method-start">0 ms</span>
+              </div> <!-- configuration-test before -->
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+      </div> <!-- main-panel-root -->
+    </div> <!-- wrapper -->
+  </body>
+</html>
