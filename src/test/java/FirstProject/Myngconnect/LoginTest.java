@@ -10,6 +10,7 @@ import java.util.NoSuchElementException;
 import java.util.Properties;
 import java.util.concurrent.TimeUnit;
 
+import org.json.simple.parser.ParseException;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
@@ -27,23 +28,34 @@ import static org.assertj.core.api.Assertions.*;
 import static org.testng.Assert.assertFalse;
 import static org.testng.Assert.assertTrue;
 
-public class LoginTest extends InitialiseDriver{
+public class LoginTest{
 
 	
 	AccessProperty property=new AccessProperty();
 	
+	
+
+	
 
 	@Test(priority = 1)
-	public void loginTest() throws InterruptedException, IOException {
-		Thread.sleep(2000);
+	public void loginTest() throws InterruptedException, IOException, ParseException {
 		
-		WebElement username = driver.findElement(By.id("j_username"));
-		username.sendKeys(property.getproperty("username"));
+		datafiletype datatype=new datafiletype();
+		datatype.DatafileType();
+		
+		Thread.sleep(5000);
+		String username=datafiletype.username;
+		String password=datafiletype.password;
+	
+		
+		WebDriver driver =InitialiseDriver.driver;
+		WebElement name = driver.findElement(By.id("j_username"));
+		name.sendKeys(username);
 
 		 Thread.sleep(2000);
 	
 		WebElement pswd = driver.findElement(By.id("passwordField"));
-		pswd.sendKeys(property.getproperty("password"));
+		pswd.sendKeys(password);
 
 		
 		//wait.until(ExpectedConditions.elementToBeClickable(By.id("imgLogin")));
@@ -60,12 +72,25 @@ public class LoginTest extends InitialiseDriver{
 		assertThat(driver.findElement(By.id("passwordField")).getAttribute("value")).isEqualTo("password");
 
 		System.out.println("Welcome");
-
-
+		
+		
 		//wait.until(ExpectedConditions.elementToBeClickable(By.xpath("//div[@class='logout icon logout-ctrl header-sprite custom-tooltip']")));
 
-		driver.close();
+	
 
+	}
+	
+	@Test(priority =2)
+	public void logout() throws InterruptedException
+	{
+		
+		WebDriver driver=InitialiseDriver.driver;
+		Thread.sleep(5000);
+		System.out.println("logout");
+		WebElement logout = driver
+				.findElement(By.xpath("//div[@class='logout icon logout-ctrl header-sprite custom-tooltip']"));
+		logout.click();
+		
 	}
 	
 	

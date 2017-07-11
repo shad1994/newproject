@@ -45,8 +45,29 @@
 			<version>3.8.0</version>
 			<scope>test</scope>
 		</dependency>
+		<dependency>
+			<groupId>com.googlecode.json-simple</groupId>
+			<artifactId>json-simple</artifactId>
+			<version>1.1.1</version>
+		</dependency>
+		<dependency>
+			<groupId>org.yaml</groupId>
+			<artifactId>snakeyaml</artifactId>
+			<version>1.17</version>
+		</dependency>
+<!-- https://mvnrepository.com/artifact/net.sourceforge.jexcelapi/jxl -->
+<!-- https://mvnrepository.com/artifact/org.jopendocument/jOpenDocument -->
+<dependency>
+    <groupId>org.jopendocument</groupId>
+    <artifactId>jOpenDocument</artifactId>
+    <version>1.3b1</version>
+</dependency>
 
-
+ <dependency>
+  <groupId>org.apache.poi</groupId>
+  <artifactId>poi-ooxml</artifactId>
+  <version>3.15</version>
+</dependency>
 		<!-- https://mvnrepository.com/artifact/org.apache.maven.surefire/maven-surefire-common -->
 		<dependency>
 			<groupId>org.apache.maven.surefire</groupId>

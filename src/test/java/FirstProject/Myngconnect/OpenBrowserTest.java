@@ -14,15 +14,13 @@ import org.openqa.selenium.firefox.FirefoxDriver;
 import org.openqa.selenium.support.ui.WebDriverWait;
 import org.testng.annotations.Test;
 
-public  class OpenBrowserTest  {
-
+public  class OpenBrowserTest{
 	
 	@Test
-	public void openbrowser() throws IOException, InterruptedException {
-		InitialiseDriver init=new InitialiseDriver();
-		String username;
-		AccessProperty property=new AccessProperty();
+	public void openbrowser() throws IOException, InterruptedException{
 		
+	
+		InitialiseDriver init=new InitialiseDriver();
 		WebDriver driver=init.initialisedriver();
 	
 		System.out.println("start");
@@ -32,8 +30,9 @@ public  class OpenBrowserTest  {
 		driver.get("https://s-www.myngconnect.com/login/chooseMainUI.spr");
 		WebElement educator = driver.findElement(By.id("imgEducators"));
 		educator.click();
-		driver.quit();//
-
+		//driver.manage().window().maximize();
+		Thread.sleep(2000);
+		
 	}
 
 

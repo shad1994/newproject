@@ -3,23 +3,9 @@
 <suite guice-stage="DEVELOPMENT" name="Failed suite [suite1]">
   <test name="test(failed)">
     <classes>
-      <class name="FirstProject.Myngconnect.OpenBrowserTest">
-        <methods>
-          <include name="openbrowser"/>
-        </methods>
-      </class> <!-- FirstProject.Myngconnect.OpenBrowserTest -->
-      <class name="FirstProject.Myngconnect.HomepageTest">
-        <methods>
-          <include name="homepagetest"/>
-        </methods>
-      </class> <!-- FirstProject.Myngconnect.HomepageTest -->
-      <class name="FirstProject.Myngconnect.logoutTest">
-        <methods>
-          <include name="logout"/>
-        </methods>
-      </class> <!-- FirstProject.Myngconnect.logoutTest -->
       <class name="FirstProject.Myngconnect.LoginTest">
         <methods>
+          <include name="logout"/>
           <include name="loginTest"/>
         </methods>
       </class> <!-- FirstProject.Myngconnect.LoginTest -->
