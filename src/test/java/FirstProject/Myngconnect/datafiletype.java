@@ -47,16 +47,21 @@ public class datafiletype {
 			System.out.println("hellooo");
 			JSONParser parser = new JSONParser();
 			Object obj = parser.parse(new FileReader("src/test/resources/data.json"));
-
+             
 			JSONObject jsonObject = (JSONObject) obj;
+			
 			System.out.println(jsonObject.toString());
+			
 			username = jsonObject.get("username").toString();
 			System.out.println(username);
 			password = jsonObject.get("password").toString();
 		} else if (filetype.equals("properties")) {
 			InputStream input = new FileInputStream("src/test/resources/data.properties");
 			Properties p = new Properties();
+			
 			p.load(input);
+			
+			
 			username = p.getProperty("username");
 			password = p.getProperty("password");
 		} else if (filetype.equals("yaml")) {
@@ -68,12 +73,15 @@ public class datafiletype {
 
 			fis = new FileInputStream(file);
 			org.yaml.snakeyaml.Yaml yaml = new org.yaml.snakeyaml.Yaml();
+			
 			Map<String, String> map = (Map<String, String>) yaml.load(fis);
 
 			username = map.get("username");
 			System.out.println(username);
 			password = map.get("password");
-		} else if (filetype.equals("xlsx")) {
+		}
+		
+		else if (filetype.equals("xlsx")) {
 			  FileInputStream excelFile = new FileInputStream(new File("src/test/resources/data.xlsx"));
 				Workbook workbook = new XSSFWorkbook(excelFile);
 			    XSSFSheet datatypeSheet = (XSSFSheet) workbook.getSheetAt(0);
